@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(../../assets/fonts/Gilroy-Bold.woff);
+}
+@font-face {
+  font-family: Proxima-nova;
+  src: url(../../assets/fonts/proxima-nova-light-webfont.woff);
+}
+@font-face {
+  font-family: Photograph-Signature;
+  src: url(../../assets/fonts/Photograph-Signature.ttf);
+}
+
+.presForumContainer{
+  background: linear-gradient(to right, #1f212d 0%,#1f212d 20%, #e0ded2 20%,#e0ded2 80%,#e0ded2 100%); 
+  height: 38vmax;
+  margin-top: 4%;
+
+}
+.line{
+  border-bottom: 2px solid #1f212d;
+  width: 42%;
+  margin-bottom: 6%;
+}
+.event_text{
+  font-size: 1.7vw;
+  position: absolute;
+  width: 60%;
+  padding:2%;
+  margin-left: 35%;
+  margin-top: 9%;
+  font-family: Proxima-nova;
+  
+}
+
+.img_container{
+  width : 100%;
+  position: absolute;
+  padding-left: 4%;
+  margin-top: 1%;
+  
+}
+.imggg{
+  width: 30%;
+  height: auto;
+  border: 2px solid #1f212d;
+  margin-top: 5%;
+}
+
+.t_text{
+  font-size: 3vw;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: -24%;
+  color:  #2ea3dd;
+  font-family: Gilroy-Bold;
+  position: absolute;
+  text-shadow: 2px 1px 2px var(--blue-marine);
+
+}
+
+.edition_text{
+  color: #2ea3dd;
+  margin-left: 7%;
+  font-size: 3.3vw;
+  font-family: Photograph-Signature;
+  position: absolute;
+  margin-top: 28%;
+}
+
+@media screen and ( max-width : 1000px ){
+
+  .presForumContainer{
+    height: 180vmax;
+  }  
+  .event_text{
+    font-size: 5vw;
+    width: 60%;
+    padding:0%;
+    margin-left: 30%;
+    margin-top: 94%;
+  }
+  .img_container{
+    width : 98%;
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  .imggg{
+    width: 95%;
+    height: auto;
+    border: 5px solid #1f212d;
+    margin-top: 5%;
+  }
+  
+  .t_text{
+    font-size: 6.5vw;
+    width: 60%;
+    margin-left: 21%;
+    margin-top: 4%; 
+    text-shadow: 2px 1px 2px var(--blue-marine);
+  }
+  
+  .edition_text{
+    margin-left: 4%;
+    font-size: 6vw;
+    margin-top: 80%;
+    width: 10%;
+    text-align: center;
+  }
+  
+
+}
+
+
+@media screen and ( max-width : 400px ){
+  .event_text{
+    font-size: 5.5vw;
+   
+  }
+  
+  .t_text{
+    font-size: 7vw;
+ 
+  }
+  
+  .edition_text{
+    font-size: 7vw;
+  }
+  
+  }

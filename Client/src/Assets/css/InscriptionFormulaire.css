@@ -1,0 +1,10 @@
+.Inscr_form{
+  padding-top: 20vh;
+    margin-bottom: 10vh;
+}
+.inscri-title{
+    color: var(--blue-marine);
+    font-family: Gilroy;
+    font-size: 3rem;
+    text-align: center;
+}

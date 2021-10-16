@@ -1,0 +1,261 @@
+@import "root.css";
+
+
+.navbar-container {
+  height: 90px;
+  width: 100vw;
+  background: var(--blue-ciel);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  font-size: 1.2rem;
+  box-shadow: 0 -3px 8px #000000;
+ 
+}
+.navbar {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.nav-container {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container-transparent {
+  height: 90px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  background: rgb(46, 163, 221, 0.7);
+ 
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+}
+
+.nav-logo {
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  flex-grow: 1;
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: all ease-in-out 250ms;
+  text-shadow: -1px 1px 0px rgb(0 0 0 / 30%), -2px 4px 2px rgb(0 0 0 / 10%);
+  font-family: proxima-nova;
+}
+
+.link-moved {
+  color: var(--blue-marine) !important;
+  text-decoration: none;
+  position: relative;
+  transition: all ease-in-out 250ms;
+  font-weight: 400;
+  font-family: proxima-nova;
+  text-shadow: -1.2px 1.2px 0px rgb(0 0 0 / 30%), -2px 4px 2px rgb(0 0 0 / 10%);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.09rem;
+  width: 0%;
+  background: white;
+  bottom: -0.75rem;
+  transition: all ease-in-out 250ms;
+}
+
+.link:hover::after {
+  width: 100%;
+  
+}
+
+
+
+.link-moved::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.09rem;
+  width: 0%;
+  background: white;
+  bottom: -0.75rem;
+  transition: all ease-in-out 250ms;
+}
+
+.link-moved:hover::after {
+  width: 100%;
+}
+
+
+.fa-code {
+  margin-left: 1rem;
+}
+
+.navigation-item {
+  padding: 5px 20px;
+  color: var(--blue-ciel);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.navigation-item-moved {
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.nav-icon {
+  display: none;
+}
+.nav-icon-moved {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  width: 15%;
+  margin-left: 10%;
+}
+
+
+
+.profileIcon{
+  width: 40px;
+}
+@media screen and (max-width: 1000px) {
+  .navbar-container-transparent {
+    background: var(--blue-ciel);
+    box-shadow: 0 -3px 8px #000000; 
+  }
+  .logo{
+    margin-left: calc(5% - 10px);
+
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 87px;
+    right: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    overflow: auto;
+  }
+
+  .nav-menu.active {
+    background: rgb(46, 163, 221, 0.7);
+    right: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    width: 50vw;
+    height: 100vh;
+    margin-right: auto;
+    line-height: 5rem;
+  }
+  .navigation-item .active {
+    border: none;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all ease-in-out 250ms;
+  }
+
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-icon-moved {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .link-moved::after{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .nav-menu.active {
+    background: rgb(46, 163, 221, 0.5);
+    right: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    margin-right: auto;
+    line-height: 5rem;
+  }
+  .main-container {
+    width: 100vw !important;
+
+  }
+}
+
+.nav-icon-moved svg {
+  color: #fff !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.logo{
+  width: 15%;
+}
+.nav-icon svg {
+  color: var(--blue-marine) !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+#root{
+  width:100%;
+  overflow-x: hidden;
+}

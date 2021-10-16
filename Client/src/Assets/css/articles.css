@@ -1,0 +1,124 @@
+.article-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 900px;
+  margin: 200px auto;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+.thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -30px;
+  height: 60px;
+  width: 530px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.2);
+}
+
+.articlesImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.2);
+}
+
+.articlesContent {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+
+.articlesTitle {
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: #2ea3dd;
+}
+
+.separator {
+  margin-top: 10px;
+  border: 1px solid #e0ded2;
+}
+
+.articlesText {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 0.95rem;
+  line-height: 150%;
+  color: #1f212d;
+}
+
+.articlesButton {
+  position: absolute;
+  right: 50px;
+  bottom: -30px;
+  box-sizing: border-box;
+  background-color: #2ea3dd;
+  height: 50px;
+  color: white;
+  text-align: center;
+  border-radius: 10%;
+  padding: 15px 20px 15px 20px;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.articlesButton a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+}
+
+@media screen and (max-width: 920px) {
+  .article-card {
+    width: 95%;
+    height: auto;
+    padding-bottom: 5%;
+  }
+  .thumbnail {
+    width: 50vw;
+  }
+  .articlesContent{
+    margin-left: 57vw;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  .articlesImage {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .articlesImage {
+    position: unset;
+    transform: unset;
+  }
+  .article-card {
+    width: 80%;
+  }
+  .thumbnail {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: auto;
+    width: 60vw;
+  }
+  .articlesContent{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

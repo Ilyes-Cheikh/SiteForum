@@ -1,0 +1,108 @@
+@import 'root.css';
+
+.about-section{
+    background-color: var(--blue-marine);
+    padding-top: 8vh;
+    
+}
+.about-title{
+    color: var(--beige);
+    font-family: Gilroy;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.about-text{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: proxima-nova ;
+   margin-bottom: 5%;
+}
+
+.about{
+    height: 50%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.services{
+    background-color: var(--blue-ciel);
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding: 10%;
+    grid-gap: 40px;
+    margin-top: -23%;
+}
+
+.card{
+    background:var(--blue-marine);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.card:hover{
+    z-index: 1;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transform: scale(1.05) !important;
+}
+
+.prog-card-container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+
+.prog-image{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.prog-card-container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.prog-card-container:after{
+    background-image: var(--beige);
+}
+
+.details{
+    padding: 20px 10px;
+}
+
+.details>h3{
+    color: #fff;
+    font-family:proxima-nova;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+
+.details>p{
+    color: #fff;
+    font-family: proxima-nova;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+
+
+  
