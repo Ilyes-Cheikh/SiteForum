@@ -32,7 +32,7 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -10%);
-  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .articlesContent {
@@ -42,7 +42,7 @@
 
 .articlesTitle {
   padding-top: 15px;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #2ea3dd;
 }
 

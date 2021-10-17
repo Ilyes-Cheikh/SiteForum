@@ -1,0 +1,229 @@
+@import 'root.css';
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Bold.woff);
+  }
+  @font-face {
+    font-family: proxima-nova;
+    src: url(../fonts/proxima-nova-light-webfont.woff);
+  }
+@font-face {
+    font-family: Signature ;
+    src: url(../fonts/Photograph-Signature.ttf);
+}
+.Video-container{
+    background: var(--blue-marine);
+    width: 90%;
+    height: 70vh;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding-top: 8px;
+    padding-bottom: 5%;
+
+}
+.vid-hr{
+    position: absolute;
+    background: var(--blue-ciel);
+    color: black;
+    width:35%;
+    height: 3px;
+    border:1px solid var(--blue-ciel);
+    border-radius: 1px;
+    bottom: 80%;
+    right: 33%;
+}
+
+.EJE_video_logo{
+        position:absolute;
+        width: 8%;
+        top:32%;
+        left:-5%;
+}
+.ENSI_video_logo{
+    position:absolute;
+    width: 8%;
+    top:30%;
+    left:10%;
+}
+.Text_slog{
+    color: white;
+    position:absolute;
+    width: 8%;
+    top:52%;
+    left:10%;
+    font-family: Signature;
+    font-size: 1.5rem;
+}
+.Text_slog:hover{
+    cursor: pointer;
+    color: var(--blue-ciel);
+}
+.Text_slog.h2{
+    font-size:1.6rem;
+}
+.Hashtag{
+    font-size: 3rem;
+    color: var(--blue-ciel);
+}
+.Video-title{
+    font-family: Gilroy;
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.vidspan{
+    color: var(--blue-ciel);
+}
+
+
+.player-wrapper {
+    margin-left: 32%;
+    width:100%;
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+.vl {
+    opacity: 0.7;
+    margin-top: 7%;
+    float: left;
+    border-left: 6px solid white;
+    margin-left: 25%;
+    height: 300px;
+    border-radius: 15%;
+  }
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 1280px) {
+    .Text_slog{
+        top:46%;
+        left:9%;
+        font-size: 1.2rem;
+    }
+    .Text_slog.h2{
+        font-size: 1.2rem;
+    }
+    .player-wrapper{
+        margin-top: 10%;
+    }
+    .vl{
+        height: 250px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .Text_slog{
+        top:40%;
+        left:7%;
+        font-size: 1 rem;
+    }
+    .Text_slog.h2{
+        font-size: 1rem;
+    }
+    .vl{
+        height: 190px;
+    }
+    .Video-container{
+        padding-bottom: 0%;
+    }
+}
+@media screen and (max-width:930px) {
+    .vl {
+        height: 0;
+        width: 0;
+      }
+      .EJE_video_logo{
+        top:30%;
+        left:52%
+      }
+      .ENSI_video_logo{
+        top:28%;
+      }
+      .Text_slog{
+          top:47%;
+          margin-left:25%;
+      }
+      .player-wrapper {
+        margin-left: -7%;
+        width:120%;
+        padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+    }
+    .Video-container{
+        height: 60vh;
+    }
+    .Video-title{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:800px){
+    .Video-container{
+        height: 50vh;
+    }
+    .Text_slog{
+        top:37%;
+    }
+    .EJE_video_logo{
+        top:26%;
+      }
+      .ENSI_video_logo{
+        top:24%;
+      }
+}
+@media screen and (max-width:680px){
+    .Video-container{
+        height: 40vh;
+    }
+    .Text_slog{
+        margin-left:27%;
+        top:29%;
+        font-size: 00.8rem;
+    }
+    .Text_slog.h2{
+        font-size: 0.8rem;
+    }
+    .EJE_video_logo{
+        top:34%;
+      }
+      .ENSI_video_logo{
+        top:33%;
+      }
+      .player-wrapper {
+        margin-left: -20%;
+        width:140%;
+        height: 100%;
+        padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+    }
+    .Video-title{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:420px){
+    .Video-container{
+        height: 45vh;
+    }
+    .Text_slog{
+        margin-left:14%;
+        top:35%;
+    }
+    .player-wrapper {
+        margin-left: -30%;
+        width:160%;
+        height: 160px;
+        padding-bottom: 5%;
+        padding-top: 0 /* Player ratio: 100 / (1280 / 720) */
+    }
+    .EJE_video_logo{
+        top:43%;
+      }
+      .ENSI_video_logo{
+        top:43%;
+      }
+      .Video-title{
+          font-size: 0.6rem;
+      }
+}
+
