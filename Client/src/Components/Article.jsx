@@ -30,7 +30,7 @@ export default function Article() {
     return (
         <div>
             <div className="article-header">
-                <img src={img}/>
+                <img src={img} alt=""/>
             </div>
             <div className="article-content">
                 <h2 className="articleTitle">{article.title}</h2>
@@ -47,7 +47,7 @@ export default function Article() {
                     <TwitterIcon logoFillColor="white" round={true} size={30} className="socialicon"></TwitterIcon>
                 </TwitterShareButton>
                 </div>
-                <p className="articleText"> {article.content} </p>
+                <div  dangerouslySetInnerHTML={{ __html: article.content}} className="articleText"></div>
             </div>
             <div className="articleArrow"><i className="fa fa-arrow-up fa-3x" onClick={scrollToTop}> </i></div>
         </div>
