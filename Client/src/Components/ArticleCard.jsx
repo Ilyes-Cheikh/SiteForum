@@ -14,11 +14,11 @@ export default function ArticleCard(props) {
     return (
         <div>
             <div className="article-card">
-                <div className="thumbnail"><img className="articlesImage" src={img} /></div>
+                <div className="thumbnail"><img className="articlesImage" src={img} alt="" /></div>
                 <div className="articlesContent">
                     <h1 className="articlesTitle">{props.title}</h1>
                     <div className="separator"></div>
-                    <p className="articlesText">{props.content.length > 100 ? props.content.substring(0, 350) + '...' : props.content}</p>
+                    <div  dangerouslySetInnerHTML={{ __html: props.content.length > 100 ? props.content.substring(0, 350) + '...' : props.content }} className="articlesText"></div>
                 </div>
                 <div className="articlesButton" onClick={scrollToTop}>
                     <Link to ={`/articles/${props.id}`}>Read more </Link>

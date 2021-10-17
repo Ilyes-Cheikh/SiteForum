@@ -96,12 +96,12 @@ export default function BlogEditor() {
     dataform.append('content', article)
     dataform.append('image', image)
     dataform.append('writer', writer)
-    dataform.append('txt', txt)
+    dataform.append('text', txt)
 
 
     setLoading(true)
     axios.post(
-     'https://back.hackprise.com/blogs',
+     'http://localhost:3001/blogs',
       
      dataform
     ).then(response => {
@@ -124,6 +124,8 @@ export default function BlogEditor() {
 
 
   }
+
+  
 
 
 

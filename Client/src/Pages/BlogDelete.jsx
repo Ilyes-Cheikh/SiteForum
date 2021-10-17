@@ -10,7 +10,7 @@ function BlogDelete() {
     const [data, setData] = useState([])
     useEffect(() => {
 
-        axios.get("https://back.hackprise.com/blogs")
+        axios.get("http://localhost:3001/blogs")
             .then(res => {
 
                 setData(res.data)
@@ -25,13 +25,15 @@ function BlogDelete() {
 
     function Delete(e) {
         let id =e.target.id
-        axios.delete(`https://back.hackprise.com/blogs/${id}`)
+        axios.delete(`http://localhost:3001/blogs/${id}`)
             .then(res => {
                
             })
 
         window.location.reload();
     }
+
+    if(!data) return
 
 
     return (
@@ -45,7 +47,7 @@ function BlogDelete() {
                     <img style={{ width: "600px", height: "300px" }} className="card-img-top" src={`/uploads/${blog.image}`} alt="" />
                     <div className="card-body" style={{ textAlign: "center" }}>
                         <h5 className="card-title">{blog.title}</h5>
-                        <p className="card-text">{blog.txt.substring(0, 30)}...</p>
+                        <p className="card-text">{blog.content.substring(0, 30)}...</p>
                         <button onClick={Delete} id={blog._id} className="btn btn-primary">Supprimer</button>
                     </div>
                 </div>
