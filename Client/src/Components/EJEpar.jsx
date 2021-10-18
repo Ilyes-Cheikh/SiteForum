@@ -10,7 +10,7 @@ const EJEpar = () => {
                 C'est quoi l'EJE ?
             </div>
             <div className="EJE_par_description">
-                <img src={logo} className="EJE_par_logo" />
+                <img src={logo} className="EJE_par_logo" alt="" />
                 <div className="EJE_par_description_left">
                     It's a student association affiliated to the national school of computer science (ENSI) aiming for professionalism
                     through its projects, trainings and events. ENSI Junior Enterprise is a non-profit organization providing students with the opportunity to benefit from their skills in a new professional experience..
