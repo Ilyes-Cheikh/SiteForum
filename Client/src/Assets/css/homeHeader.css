@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .counter-container {
@@ -98,6 +99,7 @@
   text-align: right;
   text-transform: uppercase;
   font-family: "Gilroy-Bold";
+
 }
 
 .edition h1 {
@@ -108,6 +110,7 @@
   height: 100vh;
   width: auto;
   display: flex;
+
 }
 
 .button {
@@ -236,7 +239,7 @@ a {
 
 @media (max-width: 900px) {
   .home-header-slogan {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 

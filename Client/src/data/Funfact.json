@@ -3,21 +3,21 @@
       "id": 1,
       "before":"+",
       "after":"",
-      "counterNumber": 1500,
+      "counterNumber": 3000,
       "counterText": "Participants"
     },
     {
       "id": 2,
       "before":"",
       "after":"%",
-      "counterNumber": 92,
+      "counterNumber": 89,
       "counterText": "Taux de satisfaction"
     },
     {
       "id": 3,
       "before":"",
       "after":"%",
-      "counterNumber": 73,
+      "counterNumber": 75,
       "counterText": "Taux d'embauche"
     },
     {
