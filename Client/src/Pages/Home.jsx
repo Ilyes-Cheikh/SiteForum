@@ -8,6 +8,7 @@ import Partenaires from '../Components/Partenaires'
 import Footer from '../Components/Footer'
 import Header from "../Components/HomeHeader"
 import Funfact from "../Components/Statistique"
+import Aftermovie from '../Components/Aftermovie'
 
 export default function Home() {
 
