@@ -4,7 +4,7 @@
 .navbar-container {
   height: 90px;
   width: 100vw;
-  background: var(--blue-ciel);
+  background: var(--blue-marine);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  background: rgb(46, 163, 221, 0.7);
+  background: var(--blue-marine);
  
 }
 
@@ -79,9 +79,13 @@
   text-shadow: -1px 1px 0px rgb(0 0 0 / 30%), -2px 4px 2px rgb(0 0 0 / 10%);
   font-family: proxima-nova;
 }
+.link:hover{
+  color: var(--blue-ciel);
+  text-decoration: none;
+}
 
 .link-moved {
-  color: var(--blue-marine) !important;
+
   text-decoration: none;
   position: relative;
   transition: all ease-in-out 250ms;
@@ -96,14 +100,22 @@
   display: block;
   height: 0.09rem;
   width: 0%;
-  background: white;
+  background:   linear-gradient(
+    18deg,
+    rgba(31, 33, 45, 1) 0%,
+    rgba(46, 163, 221, 1) 61%
+  );;
   bottom: -0.75rem;
   transition: all ease-in-out 250ms;
 }
 
 .link:hover::after {
   width: 100%;
-  
+  background: linear-gradient(
+    18deg,
+    rgba(31, 33, 45, 1) 0%,
+    rgba(46, 163, 221, 1) 61%
+  );
 }
 
 
@@ -114,7 +126,7 @@
   display: block;
   height: 0.09rem;
   width: 0%;
-  background: white;
+
   bottom: -0.75rem;
   transition: all ease-in-out 250ms;
 }
@@ -161,7 +173,7 @@
 }
 @media screen and (max-width: 1000px) {
   .navbar-container-transparent {
-    background: var(--blue-ciel);
+    background: var(--blue-marine);
     box-shadow: 0 -3px 8px #000000; 
   }
   .logo{
@@ -181,7 +193,7 @@
   }
 
   .nav-menu.active {
-    background: rgb(46, 163, 221, 0.7);
+    background: rgb(31, 33,45 , 0.5);
     right: 0px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -225,8 +237,9 @@
 
 
 @media screen and (max-width: 560px) {
+
   .nav-menu.active {
-    background: rgb(46, 163, 221, 0.5);
+    background: rgb(31, 33,45 , 0.7);
     right: 0px;
     opacity: 1;
     transition: all 0.5s ease;
