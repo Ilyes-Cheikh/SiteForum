@@ -34,19 +34,6 @@ export default function Article() {
             </div>
             <div className="article-content">
                 <h2 className="articleTitle">{article.title}</h2>
-                <div className="share">
-                <FacebookShareButton url={`http://localhost:8000/articles/${articleId}`}>
-                    <FacebookIcon logoFillColor="white" round={true} size={30} className="socialicon"></FacebookIcon>
-                </FacebookShareButton>
-
-                <LinkedinShareButton url={`http://localhost:8000/articles/${articleId}`}>
-                    <LinkedinIcon logoFillColor="white" round={true} size={30} className="socialicon"></LinkedinIcon>
-                </LinkedinShareButton>
-
-                <TwitterShareButton url={`http://localhost:8000/article/${articleId}`}>
-                    <TwitterIcon logoFillColor="white" round={true} size={30} className="socialicon"></TwitterIcon>
-                </TwitterShareButton>
-                </div>
                 <div  dangerouslySetInnerHTML={{ __html: article.content}} className="articleText"></div>
             </div>
             <div className="articleArrow"><i className="fa fa-arrow-up fa-3x" onClick={scrollToTop}> </i></div>

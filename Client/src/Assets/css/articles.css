@@ -83,6 +83,16 @@
     font-weight: bold;
 }
 
+.share {
+  display: flex;
+  justify-content:flex-start;
+  margin: 5%;
+}
+
+.react-share__ShareButton {
+  margin-right: 2%;
+}
+
 @media screen and (max-width: 920px) {
   .article-card {
     width: 95%;
