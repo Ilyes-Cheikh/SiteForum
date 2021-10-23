@@ -1,16 +1,19 @@
 import React from 'react'
 import "../Assets/css/articles.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import {
+    FacebookShareButton, LinkedinShareButton, TwitterShareButton, FacebookIcon, LinkedinIcon, TwitterIcon
+} from "react-share";
 
 
 export default function ArticleCard(props) {
     const img = `/uploads/${props.image}`
     const scrollToTop = () => {
         window.scrollTo({
-          top: 0,
-          behavior: "smooth"
+            top: 0,
+            behavior: "smooth"
         });
-      };
+    };
     return (
         <div>
             <div className="article-card">
@@ -18,12 +21,27 @@ export default function ArticleCard(props) {
                 <div className="articlesContent">
                     <h1 className="articlesTitle">{props.title}</h1>
                     <div className="separator"></div>
-                    <div  dangerouslySetInnerHTML={{ __html: props.content.length > 100 ? props.content.substring(0, 350) + '...' : props.content }} className="articlesText"></div>
+                    <div dangerouslySetInnerHTML={{ __html: props.content.length > 100 ? props.content.substring(0, 350) + '...' : props.content }} className="articlesText"></div>
                 </div>
+                <div className="share">
+                    <FacebookShareButton url={`http://localhost:8000/articles`}>
+                        <FacebookIcon logoFillColor="white" round={true} size={30} className="socialicon"></FacebookIcon>
+                    </FacebookShareButton>
+
+                    <LinkedinShareButton url={`http://localhost:8000/articles/`}>
+                        <LinkedinIcon logoFillColor="white" round={true} size={30} className="socialicon"></LinkedinIcon>
+                    </LinkedinShareButton>
+
+                    <TwitterShareButton url={`http://localhost:8000/article/`}>
+                        <TwitterIcon logoFillColor="white" round={true} size={30} className="socialicon"></TwitterIcon>
+                    </TwitterShareButton>
+                </div>
+
                 <div className="articlesButton" onClick={scrollToTop}>
-                    <Link to ={`/articles/${props.id}`}>Read more </Link>
-                
-                    </div>
+                    <Link to={`/articles/${props.id}`}>Read more </Link>
+
+                </div>
+
             </div>
         </div>
     )

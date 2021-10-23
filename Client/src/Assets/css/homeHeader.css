@@ -17,6 +17,7 @@
   align-items: center;
   color: white;
   height: 100%;
+  margin-top: 30px;
 }
 
 .home-header-title {
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   text-shadow:3px 1px 2px var(--blue-marine);
+  text-align: center;
 }
 
 .home-header-slogan {
@@ -48,7 +50,7 @@
 }
 
 .timer {
-  font-size: 50px;
+  font-size: 2rem;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -82,7 +84,6 @@
 .edition {
   box-sizing: border-box;
   padding: 0 1rem;
-  width: 40vw;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -231,6 +232,8 @@ a {
   .timer {
     margin-bottom: 2.5%;
     margin-top: 2.5%;
+    width:90px;
+    height:90px;
   }
 }
 
@@ -248,11 +251,11 @@ a {
   .edition {
     width: 100vw;
     text-align: center;
-    margin-top: 80px;
-    height: 180px;
+    margin-top: 100px;
+    height: 20%;
   }
   .edition h1 {
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   .timer-container {
@@ -263,11 +266,14 @@ a {
     text-align: center;
     width: 100vw;
   }
+  .counter-container{
+    height: 60%;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 590px) {
   .edition {
-    height: 150px;
     margin-bottom: 0;
   }
   
@@ -278,11 +284,12 @@ a {
 
 @media (max-height: 650px) {
   .edition h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
   .timer{
-    height: 65px;
-    width: 65px;
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
   }
   .timer-container{
     margin-top: 0 !important;
@@ -291,9 +298,30 @@ a {
 
 @media (max-width: 540px) {
   .home-header-title {
-    display: none;
+    font-size: 1.75rem;
   }
   .timer-container {
-    margin-top: 5%;
   }
+  .home-header-slogan{
+    font-size: 2rem;
+  }
+}
+@media(max-width:300px){
+  .edition h1{
+    font-size: 1.5rem;
+  }
+  .edition{
+    height: 15%;
+  }
+  .counter-container{
+    margin-top: 15%;
+  }
+  .home-header-slogan{
+    margin-bottom: 0;
+  }
+}
+
+
+.header-logo{
+  height: 30%;
 }
