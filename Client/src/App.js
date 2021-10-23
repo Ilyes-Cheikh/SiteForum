@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './Assets/css/app.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home'
-
+import { useEffect } from 'react';
 import Auditorium from './Components/Auditorium';
 import Articles from "./Pages/Articles"
 import Article from "./Pages/ArticlePage"
@@ -18,9 +18,16 @@ import BlogEditor from './Pages/BlogEditor';
 import BlogDelete from './Pages/BlogDelete';
 
 function App() {
+  useEffect(() => {
+    showLoader();
+    addClass();
+  }, []);
+const loader = document.querySelector(".loader");
+const showLoader = () => loader.classList.remove("loader");
+const addClass = () => loader.classList.add("loader-hide");
   return (
   <>
-  
+   
    <Router>
    <Navbar/>
         <Switch>
