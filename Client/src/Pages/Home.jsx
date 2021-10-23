@@ -9,7 +9,7 @@ import Footer from '../Components/Footer'
 import Header from "../Components/HomeHeader"
 import Funfact from "../Components/Statistique"
 import Aftermovie from '../Components/Aftermovie'
-
+import Entreprises from '../Components/Entreprises'
 export default function Home() {
 
     return (
@@ -19,6 +19,7 @@ export default function Home() {
             <Partenaires />
             <PresForum />
             <Funfact />
+            <Entreprises/>
             <Aftermovie/>
             <Footer />
         </div>

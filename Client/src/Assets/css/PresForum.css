@@ -13,7 +13,7 @@
 
 .presForumContainer{
   background: linear-gradient(to right, #1f212d 0%,#1f212d 20%, white 20%,white 80%,white 100%); 
-  height: 36vmax;
+  height: 41vmax;
   margin-top: 4%;
 
 }
@@ -23,12 +23,12 @@
   margin-bottom: 6%;
 }
 .event_text{
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   position: absolute;
   width: 60%;
   padding:2%;
   margin-left: 35%;
-  margin-top: 9%;
+  margin-top: 7%;
   font-family: Proxima-nova;
   
 }

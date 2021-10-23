@@ -63,7 +63,7 @@ export default function Header() {
                                 </div>
                             </div>
                             <div>
-                                <p className="home-header-slogan">Always striving for greatness</p>
+                                <p className="home-header-slogan">#Always_Striving_For_Greatness</p>
                             </div>
                             <div>
                                 <div className="btn" ><Link to="/inscription" className="button" >S'inscrire</Link></div>

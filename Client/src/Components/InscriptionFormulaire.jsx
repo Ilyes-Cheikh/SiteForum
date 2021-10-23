@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBInput } from "mdbreact";
 import {Button,FormControl,InputLabel,Select,MenuItem} from '@mui/material';
+import { Alert } from 'react-bootstrap';
 import axios from "axios";
+import logo16 from '../Assets/images/logo16.png'
+import swal from 'sweetalert2'
 
 import "../Assets/css/InscriptionFormulaire.css";
 
 function InscriptionFormulaire() {
-  const baseURL = "http://localhost:4000";
+  const baseURL = "http://localhost:3001/inscription";
+  const [isLoading, setLoading] = useState(true);
+  const [ShowFail, setShowFail] = useState(false);
+  const myRef = useRef(null)
+  const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
   const [Nom, setNom] = useState('');
   const [Prenom, setPrenom] = useState('');
@@ -17,8 +24,11 @@ function InscriptionFormulaire() {
   const [Universite, setUniversite] = useState('');
   const [Classe, setClasse] = useState('');
   const [Vaccine, setVaccine] = useState(false);
+  const [Partage, setPartage] = useState(false);
 
-  const [Response, setResponse] = useState({})
+  const [CV, setCV] = useState('');
+
+  const [ResponseMessage, setResponseMessage] = useState({})
 
   const handleNomChange = (event) => {
     setNom(event.target.value);
@@ -44,34 +54,57 @@ function InscriptionFormulaire() {
     setClasse(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const user = {
-      Nom: Nom,
-      prenom: Prenom,
-      Email: Email,
-      Birthday: Birthday,
-      Status: Status,
-      Universite: Universite || null,
-      Classe: Classe || null,
-      Vaccine: Vaccine
-}
-    console.log(user);
-    axios
-      .post(baseURL, user)
-      .then((response) => {
-        setResponse(response.data);
-      });
+  const handleCVChange = (event) => {
+    setCV(event.target.files);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const data = new FormData();
+    data.append('CV', CV[0]);
+    data.append('Nom',Nom)
+    data.append('Prenom',Prenom)
+    data.append('Email',Email)
+    data.append('Birthday',Birthday)
+    data.append('Status',Status)
+    data.append('Universite',Universite)
+    data.append('Classe',Classe)
+    data.append('Vaccine',Vaccine)
+    data.append('Partage',Partage)
+    axios
+      .post(baseURL, data, {
+        headers: {
+          "Content-Type": "application/json"
+        },
+      })
+      .then((response) => {
+        setResponseMessage(response.data)
+        //console.log(ResponseMessage)
+        {swal.fire({
+          text: "Vous êtes inscti avec succès au 16ème édition du forum annuel de l'ENSI Junior Entreprise",
+          icon: 'success',
+          confirmButtonColor: '#2ea3dd',
+  
+      })}
+        
+      }).catch(()=>{
+        setShowFail(true)
+        executeScroll()
+        setTimeout(()=>setShowFail(false),2000)
+        
+      });
+      
+  };
 
   return (
-    <div className="Inscr_form">
-      <MDBContainer>
-        <MDBRow>
+    <div ref={myRef} className="Inscr_form">
+      <MDBContainer >
+        <MDBRow >
           <MDBCol md="6">
             <form onSubmit={handleSubmit}>
               <p className="h5 text-center mb-4" className='inscri-title'>Inscription</p>
+              <Alert show={ShowFail} variant='danger'>L'adresse mail existe déja</Alert>
               <div className="grey-text">
                 <MDBInput
                   required
@@ -177,7 +210,6 @@ function InscriptionFormulaire() {
                 ) : null}
               </div>
 
-              {Status == "Etudiant" && Classe == 3 ? (
                 <MDBInput
                   label="CV"
                   icon="file-alt"
@@ -187,19 +219,31 @@ function InscriptionFormulaire() {
                   error="wrong"
                   success="right"
                   hint="Placeholder"
+                  onChange={handleCVChange}
                 />
-              ) : null}
 
               <div class="custom-control custom-checkbox">
                 <input
                   required
                   type="checkbox"
                   class="custom-control-input"
-                  id="defaultUnchecked2"
+                  id="defaultUnchecked"
                   onChange={() => setVaccine(!Vaccine)}
                 ></input>
-                <label class="custom-control-label" for="defaultUnchecked2">
+                <label class="custom-control-label" for="defaultUnchecked">
                   Je suis vacciné(e)
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input
+                  required
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="defaultUnchecked2"
+                  onChange={() => setPartage(!Partage)}
+                ></input>
+                <label class="custom-control-label" for="defaultUnchecked2">
+                  J'accepte que mes données serons partagés avec les entreprises
                 </label>
               </div>
 
@@ -210,6 +254,9 @@ function InscriptionFormulaire() {
                   variant="contained"
                   sx={{
                     backgroundColor: "#2ea3dd",
+                    "&:focus": {
+                      backgroundColor: "#2ea3dd"
+                    },
                   }}
                 >
                   Inscrire
@@ -217,6 +264,7 @@ function InscriptionFormulaire() {
               </div>
             </form>
           </MDBCol>
+          <img src={logo16} className="logo-img"></img>
         </MDBRow>
       </MDBContainer>
     </div>
