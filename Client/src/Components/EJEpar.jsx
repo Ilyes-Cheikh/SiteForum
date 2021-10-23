@@ -12,13 +12,11 @@ const EJEpar = () => {
             <div className="EJE_par_description">
                 <img src={logo} className="EJE_par_logo" />
                 <div className="EJE_par_description_left">
-                    It's a student association affiliated to the national school of computer science (ENSI) aiming for professionalism
-                    through its projects, trainings and events. ENSI Junior Enterprise is a non-profit organization providing students with the opportunity to benefit from their skills in a new professional experience..
-                </div>
+                Une association étudiante affiliée à l'école nationale d'informatique (ENSI) visant le professionnalisme à travers ses projets, ses formations et ses événements
+                                </div>
                 <div className="EJE_par_description_right">
-                    Since 2006 we have gained experience and expertise,always driven by a wide range of knowhow,skills and enterpreneurship.
-                    We have been able to win the satisfaction of our members through educational courses,technical projects and events and
-                    put in practice the theoretical training they receive at the ENSI.
+                Association à but non lucratif offrant aux étudiants la possibilité de mettre leurs compétences au service d'une nouvelle expérience professionnelle. 
+On travaille sur 3 axes qui sont : projet, formation et évènementiel qui sont assurés par 3 pôles qui sont : communication et media, développement commerciale et projet.
                 </div>
             </div>
             </Paper> 

@@ -43,10 +43,17 @@ export default function Header() {
                             <h1 >16ème édition Du Forum Annuel de l'ENSI</h1>
                             <div>
                                 <div class="social-links">
+
                                     <a href="https://www.facebook.com/ENSI.Junior.Entreprise/"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.instagram.com/ensijunior/"><i class="fab fa-instagram"></i></a>
                                     <a href="https://www.linkedin.com/company/ensi-junior-entreprise/"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://www.youtube.com/user/ENSIJuniorEntreprise"><i class="fab fa-youtube"></i></a>
+
+                                    <a href='https://www.facebook.com/ENSI.Junior.Entreprise/' target='_blank'><i class="fab fa-facebook-f"></i></a>
+                                    <a href='https://www.instagram.com/ensijunior/' target='_blank'><i class="fab fa-instagram"></i></a>
+                                    <a  href='https://www.linkedin.com/company/ensi-junior-entreprise/' target='_blank' ><i class="fab fa-linkedin"></i></a>
+                                    <a href='https://www.youtube.com/user/ENSIJuniorEntreprise' target='_blank'><i class="fab fa-youtube"></i></a>
+
                                 </div>
                             </div>
                         </div>
@@ -78,10 +85,10 @@ export default function Header() {
                             {finish && 
                             <img src={logo} className="header-logo"/>}
                             <div>
-                                <p className="home-header-slogan">Always striving for greatness</p>
+                                <p className="home-header-slogan">#Always_Striving_For_Greatness</p>
                             </div>
                             <div>
-                                <div className="btn"><Link to="/inscription" className="button">S'inscrire</Link></div>
+                                <div className="btn" ><Link to="/inscription" className="button" >S'inscrire</Link></div>
                             </div>
                         </div>
                     </div>
