@@ -32,7 +32,7 @@ export default function HomeAboutUs() {
             </div>
             <div className="services">
                 <div className="cards">
-                    <Link to="/stand" >
+                    <Link to="/stand"  className="link">
                     <div className="card" >                     
                    
                         <div className="prog-card-container">
@@ -44,7 +44,7 @@ export default function HomeAboutUs() {
                         </div>
                     </div>
                     </Link>
-                    <Link to="auditorium" >
+                    <Link to="auditorium"  className="link">
                     <div className="card"
                       
                     >

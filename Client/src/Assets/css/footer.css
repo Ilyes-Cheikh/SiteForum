@@ -44,6 +44,7 @@
     width: 20px;
     height:20px;
 }
+
 @media (max-width: 1125px){
     .footer-col{
         margin: 0px 15px;

@@ -12,7 +12,7 @@ export default function PresForum(){
            <div class="event_text">
              <div class="line"></div>  
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis esse unde praesentium quos. Dicta velit, officia eum repellat ea, earum enim at, quae voluptate tempore voluptatem cumque ut pariatur magni fuga mollitia! Cum iusto, deleniti, maxime qui aut, assumenda voluptatum sequi placeat quos quis dicta recusandae similique optio atque eum. Maiores earum inventore magnam, quo, corrupti voluptatum incidunt omnis asperiores iusto facere accusamus esse quia voluptate perspiciatis harum? Minus consequuntur corrupti minima voluptatum, saepe veniam ullam ad cumque debitis natus!</div>
-           <div class="edition_text"> Dans sa 16ème édition </div> 
+           <div class="edition_text"> <span style={{color:'white'}}> Dans sa 16 </span> ème édition </div> 
            </div>
   
     )
