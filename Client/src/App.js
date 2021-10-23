@@ -25,7 +25,7 @@ const addClass = () => loader.classList.add("loader-hide");
 function App() {
   
   useEffect(() => {
-     showLoader();
+    showLoader();
     addClass();
   }, []);
   
