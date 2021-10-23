@@ -246,6 +246,7 @@ a {
 @media (max-width: 750px) {
   .home-header-content {
     flex-direction: column;
+    margin-top: 10px;
   }
   .edition {
     width: 100vw;

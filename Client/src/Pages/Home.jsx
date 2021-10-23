@@ -19,7 +19,11 @@ export default function Home() {
             <Partenaires />
             <PresForum />
             <Funfact />
+
             <Speakers />
+
+            <Aftermovie/>
+
             <Footer />
         </div>
 
