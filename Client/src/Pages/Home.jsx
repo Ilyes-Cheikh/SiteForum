@@ -19,6 +19,7 @@ export default function Home() {
             <Partenaires />
             <PresForum />
             <Funfact />
+            <br/>
             <Entreprises/>
             <Aftermovie/>
             <Footer />

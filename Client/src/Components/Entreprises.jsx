@@ -14,11 +14,7 @@ import img8 from '../Assets/images/value.png'
 export default function Entreprises() {
     return (
         <section id="partners">
-            <Zoom>
-                <div className="titleWrapper">
-                    <h1 contenteditable data-heading="Our Partners" className="titles">Our Partners</h1>
-                </div>
-            </Zoom>
+           
             <div className="partners">
                 <div className="box">
                     <span style={{ "--i": 1 }}><img src={img1} /></span>

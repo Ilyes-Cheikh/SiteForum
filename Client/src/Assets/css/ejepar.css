@@ -9,10 +9,10 @@
   }
   .paper{
       width:75%;
-      margin-top: 2%;
+      margin-top: 1%;
   }
 .EJE_par{
-    height:60vh;
+    height:65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@
 .EJE_par_description{
     font-family: proxima-nova;
     color:var(--blue-marine);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position:relative;
     text-align: justify;
     line-height: 1.4;
@@ -87,7 +87,7 @@
         width:90%;
     }
     .EJE_par{
-        height:70vh;
+        height:60vh;
     }
     .EJE_par_logo{
         margin-top: 7%;
@@ -137,7 +137,7 @@
       .paper{
           width: 90%;
           display: grid;
-          opacity: 0.8;
+          opacity: 1;
           margin-top: 6%;
       }
     .EJE_par{
@@ -151,7 +151,7 @@
         right: 15%;
         width: 70%;
         opacity: 0.5;
-        margin-top: 40%;
+        margin-top: 25%;
     }
     .EJE_par_title{
         font-size: 2rem;
@@ -162,7 +162,7 @@
         margin-left: 9%;   
     }
     .EJE_par_description{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .EJE_par_description_left{
         width: 100%;
@@ -179,6 +179,12 @@
       }
       
 .EJE_par{
-    height:90vh;
+    height:80vh;
+}
+.EJE_par_description{
+    font-size: 1rem;
+}
+.EJE_par_logo{
+    margin-top: 60%;
 }
   }

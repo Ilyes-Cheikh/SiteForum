@@ -9,11 +9,11 @@ import Article from "./Pages/ArticlePage"
 
 
 import Programmepage from './Pages/Programmepage';
-
+import Workshops from './Components/Workshops';
 import Navbar from './Components/Navbar';
 import { Nav } from 'react-bootstrap';
 import Inscription from './Pages/Inscription'
-
+import Stand from './Components/Stand'
 import BlogEditor from './Pages/BlogEditor';
 import BlogDelete from './Pages/BlogDelete';
 
@@ -34,7 +34,8 @@ const addClass = () => loader.classList.add("loader-hide");
           <Route exact path="/"><Home/></Route>
 
           <Route exact path="/programme"><Programmepage/></Route>
-
+          <Route exact path="/Workshop"><Workshops/></Route>
+          <Route exact path="/Stand"><Stand/></Route>
           <Route exact path="/articles"><Articles/></Route>
           <Route exact path="/articles/:articleId"><Article/></Route>
 

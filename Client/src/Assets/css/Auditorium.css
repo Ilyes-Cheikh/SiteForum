@@ -217,7 +217,7 @@
   #timeline .demo-card .body img {
     display: block;
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
   #timeline .demo-card--step1 {
     background-color: var(--beige);

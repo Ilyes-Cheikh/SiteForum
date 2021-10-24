@@ -2,8 +2,10 @@ import React from 'react'
 import '../Assets/css/ejepar.css'
 import logo from '../Assets/images/EJE + Text.png'
 import Paper from '@material-ui/core/Paper';
+import Slide from 'react-reveal/Flip';
 const EJEpar = () => {
     return (
+        <Slide left>
         <div className="EJE_par" >
             <Paper  className="paper" elevation={3}>
             <div className="EJE_par_title">
@@ -12,15 +14,32 @@ const EJEpar = () => {
             <div className="EJE_par_description">
                 <img src={logo} className="EJE_par_logo" />
                 <div className="EJE_par_description_left">
-                Une association étudiante affiliée à l'école nationale d'informatique (ENSI) visant le professionnalisme à travers ses projets, ses formations et ses événements
-                                </div>
+                Fondée en 2006, l’ENSI Junior Entreprise est une association étudiante,
+inscrite au journal officiel de la république Tunisienne depuis 2011 et affilée
+à l’école nationale des sciences de l’informatique, ayant pour finalité
+l’initiation des étudiants tunisiens à la vie professionnelle. Et ce à travers l’
+élaboration des activités basées sur trois axes principaux : Les formations,
+les événements et la réalisation des projets dans le domaine des
+TIC.
+S’alignant avec le concept de base du mouvement Junior-Entreprise,
+notre mission principale est de réaliser des projets à plus-value
+pédagogique et économique dans le domaine des technologies de
+l’information et de la communication.
+TIC.                                </div>
                 <div className="EJE_par_description_right">
-                Association à but non lucratif offrant aux étudiants la possibilité de mettre leurs compétences au service d'une nouvelle expérience professionnelle. 
-On travaille sur 3 axes qui sont : projet, formation et évènementiel qui sont assurés par 3 pôles qui sont : communication et media, développement commerciale et projet.
+                En outre, nous nous dotons, évidemment, de la responsabilité de
+promouvoir l’esprit entrepreneurial dans l’écosystème Tunisien à
+travers nos activités notamment nos événements qui fortifient le lien
+étudiant-entreprise donnant ainsi aux étudiants le goût
+d’entreprendre et l’envie de s’investir dans un projet qui leur est
+propre. 
+Ensemble, avec le soutien de nos partenaires, nous sommes en mesure de progresser ,d'avancer et de réussir à préserver les 16 ans d’excellence qui a toujours représenté l’état
+d’esprit et le destin de cette entité.
                 </div>
             </div>
             </Paper> 
         </div>
+        </Slide>
     )
 }
 
