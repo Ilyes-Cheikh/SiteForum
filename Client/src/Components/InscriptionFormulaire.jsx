@@ -211,7 +211,7 @@ function InscriptionFormulaire() {
               </div>
 
                 <MDBInput
-                  label="CV"
+                  label="Déposez votre CV"
                   icon="file-alt"
                   group
                   type="file"
@@ -243,7 +243,7 @@ function InscriptionFormulaire() {
                   onChange={() => setPartage(!Partage)}
                 ></input>
                 <label class="custom-control-label" for="defaultUnchecked2">
-                  J'accepte que mes données serons partagés avec les entreprises
+                  J'accepte que mes données serons partagés avec les entreprises.
                 </label>
               </div>
 

@@ -6,13 +6,14 @@ import Workshop from '../Assets/images/workshop.jpg'
 import auditorium from '../Assets/images/auditorium.jpg'
 import stand from '../Assets/images/stand.jpg'
 import { Link } from 'react-router-dom'
-
+import Zoom from 'react-reveal/Zoom';
 
 export default function HomeAboutUs() {
     useEffect(() => {
         Aos.init()
     })
     return (
+        <Zoom>
         <div className="about-section">
             <div className="about">
                 <div className="about-title"
@@ -72,7 +73,7 @@ export default function HomeAboutUs() {
 
             </div>
         </div>
-
+        </Zoom>
     )
 
 }

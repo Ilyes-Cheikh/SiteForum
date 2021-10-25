@@ -3,7 +3,7 @@ import '../Assets/css/Auditorium.css'
 import ouverture from '../Assets/images/motouvert.jpg'
 import pause from '../Assets/images/pause.jpg'
 import tableronde from '../Assets/images/tableronde.jpg'
-import cloture from '../Assets/images/forumimg.jpg'
+import cloture from '../Assets/images/forumimg2.jpg'
 import presentreprises from '../Assets/images/presentreprises.jpg'
 export default function Auditorium () {
     return(
@@ -12,7 +12,7 @@ export default function Auditorium () {
         <h1>Programme</h1>
         <p class="leader">Auditorium</p>
         <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         <span>08h30</span>
@@ -21,7 +21,7 @@ export default function Auditorium () {
                 </div>
                 <div class="body">
                   
-                    <img src={ouverture} alt="Graphic"/>
+                    <img src={ouverture} alt="ouverture"/>
                 </div>
             </div>
     
@@ -34,11 +34,11 @@ export default function Auditorium () {
                 </div>
                 <div class="body">
                    
-                    <img src={presentreprises} alt="Graphic"/>
+                    <img src={presentreprises} alt="entreprises"/>
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         
@@ -47,7 +47,7 @@ export default function Auditorium () {
                 </div>
                 <div class="body">
                   
-                    <img src={pause} alt="Graphic"/>
+                    <img src={pause} alt="pause"/>
                 </div>
             </div>
     
@@ -60,11 +60,11 @@ export default function Auditorium () {
                 </div>
                 <div class="body">
                    
-                    <img src={tableronde} alt="Graphic"/>
+                    <img src={tableronde} alt="tableronde"/>
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         <span>17h</span>

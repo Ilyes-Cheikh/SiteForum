@@ -126,8 +126,7 @@
     .player-wrapper {
         margin-left: 10%;
         width:80%;
-        position: relative;
-        padding-top: 40% /* Player ratio: 100 / (1280 / 720) */
+        padding-top: 30% /* Player ratio: 100 / (1280 / 720) */
     }
     .Text_slog{
         top:76%;
@@ -170,7 +169,7 @@
 
     
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:600px){
     .player-wrapper{
         margin-left: 4%;
         width: 92%;
@@ -200,40 +199,77 @@
 }
 }
 @media screen and (max-width:520px){
+    .player-wrapper{
+        margin-left: 4%;
+        width: 92%;
+        margin-top: 6%;
+        padding-top: 50%
+    }
     .Video-container{
         height: 50vh;
     }
     .EJE_video_logo{
         width: 10%;
-        top:89%;
+        top:84%;
         left:0%;
 }
 .ENSI_video_logo{
     width: 10%;
-    top:88%;
+    top:83%;
     left:93%;
 }
 .Text_slog{
-    top:83%;
+    top:80%;
     left:15%;
     font-size: 1.9rem;
 }
 }
+
 @media screen and (max-width:430px){
     .Text_slog{
-        font-size: 1.7rem;
-    }
-    .fh2{
-        font-size: 1.7rem;
-    }
-}
-@media screen and (max-width:430px){
-    .Text_slog{
+        top:76%;
         font-size: 1.4rem;
     }
     .fh2{
         font-size: 1.4rem;
     }
 }
+@media screen and (max-width:350px){
+    .Text_slog{
+        font-size: 1.4rem;
+    }
+    .fh2{
+        font-size: 1.4rem;
+    }
+    .EJE_video_logo{
+        top:84%;
 
+}
+.ENSI_video_logo{
+    top:83%;
+}
+.Text_slog{
+    top:75%;
+    font-size: 1.2rem;
+}
+.fh2{
+    font-size: 1.2rem;
+}
+}
+@media screen and (max-width:350px){
 
+.Text_slog{
+    top:73%;
+    font-size: 1.0rem;
+}
+.fh2{
+    font-size: 1.0rem;
+}
+}
+/*Height control*/
+
+@media screen and (max-height:510px){
+    .Video-container{
+        height: 70vh;
+    }
+}

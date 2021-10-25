@@ -4,7 +4,7 @@ import ouverture from '../Assets/images/motouvert.jpg'
 import pause from '../Assets/images/pause.jpg'
 import stand1 from '../Assets/images/stand1.jpg'
 import stand2 from '../Assets/images/stand2.jpg'
-import cloture from '../Assets/images/forumimg.jpg'
+import cloture from '../Assets/images/forumimg2.jpg'
 
 export default function Stand() {
     return(
@@ -13,7 +13,7 @@ export default function Stand() {
         <h1>Programme</h1>
         <p class="leader">Stand</p>
         <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         <span>08h30</span>
@@ -39,7 +39,7 @@ export default function Stand() {
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         
@@ -65,7 +65,7 @@ export default function Stand() {
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         <span>17h</span>

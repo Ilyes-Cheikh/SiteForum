@@ -2,7 +2,7 @@ import React from 'react'
 import '../Assets/css/ejepar.css'
 import logo from '../Assets/images/EJE + Text.png'
 import Paper from '@material-ui/core/Paper';
-import Slide from 'react-reveal/Flip';
+import Slide from 'react-reveal/Slide';
 const EJEpar = () => {
     return (
         <Slide left>

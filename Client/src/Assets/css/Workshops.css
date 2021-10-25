@@ -1,8 +1,9 @@
 @import '#root.css';
 .staytuned{
-    color: white !important;
+    color: var(--blue-ciel) !important;
     font-size: 5rem;
     text-align: center;
     font-family: Signature;
     margin-top: 20vh;
+   
 }

@@ -23,7 +23,7 @@
   margin-bottom: 6%;
 }
 .event_text{
-  font-size: 1.4vw;
+  font-size: 1.2rem;
   position: absolute;
   width: 60%;
   padding:2%;
@@ -69,17 +69,24 @@
  
 }
 
+@media screen and ( max-width : 1200px ){
+  .presForumContainer{
+    height: 50vmax;
+  }  
+
+}
+
 @media screen and ( max-width : 1000px ){
 
   .presForumContainer{
-    height: 180vmax;
+    height: 155vmax;
   }  
   .event_text{
-    font-size: 5vw;
+   
     width: 60%;
     padding:0%;
     margin-left: 30%;
-    margin-top: 94%;
+    margin-top: 84%;
   }
   .img_container{
     width : 98%;
@@ -88,15 +95,15 @@
     margin-top: 3%;
   }
   .imggg{
-    width: 95%;
+    width: 85%;
     height: auto;
 
     margin-top: 5%;
   }
   
   .t_text{
-    font-size: 6.5vw;
-    width: 60%;
+    font-size: 3rem;
+    width: 50%;
     margin-left: 21%;
     margin-top: 4%; 
     text-shadow: 2px 1px 2px var(--blue-marine);
@@ -114,16 +121,77 @@
 
 }
 
+@media screen and ( max-width : 800px ){
 
-@media screen and ( max-width : 400px ){
-  .event_text{
-    font-size: 4.4vw;
+  .presForumContainer{
+    height: 175vmax;
+  }  
+
+  .t_text{
+    font-size: 3rem;
+    width: 60%;
+  }
+  
+}
+
+@media screen and ( max-width : 740px ){
+  .t_text{
+    font-size: 2.5rem;
+    width: 50%;
+  }
+ .event_text{
+   margin-top: 90%;
+ }
+}
+@media screen and ( max-width : 660px ){
+  .presForumContainer{
+    height: 190vmax;
+  }  
+  .t_text{
+    width: 60%;
+  }
+  
+}
+
+
+@media screen and ( max-width : 550px ){
+  .t_text{
+    font-size: 2rem;
+    width: 60%;
+  }
+ .event_text{
+   margin-top: 90%;
+ }
+}
+
+@media screen and (max-width : 440px){
    
+  .event_text{
+    margin-top: 92%;
   }
   
   .t_text{
-    font-size: 7vw;
- 
+    font-size: 1.8rem;
+    width:70%;
+  }
+
+  .presForumContainer{
+    height: 200vh;
+  }  
+
+}
+@media screen and ( max-width : 400px ){
+  .presForumContainer{
+    height: 170vh;
+  }  
+  .event_text{
+    font-size: 1rem;
+    margin-top: 92%;
+  }
+  
+  .t_text{
+    font-size: 1.5rem;
+    
   }
   
   .edition_text{
@@ -133,3 +201,31 @@
  
 
   }
+
+  @media screen and ( max-width : 370px ){
+    .presForumContainer{
+      height: 175vh;
+    }  
+  }
+
+  @media screen and ( max-width : 290px ){
+    .presForumContainer{
+      height: 180vh;
+    }
+    .event_text{
+      margin-top: 110%;
+    }  
+  }
+
+@media screen and (max-height : 600px){
+  .presForumContainer{
+    height: 210vh;
+  }
+}
+
+
+@media screen and (min-height : 750px)and (max-width:800px){
+  .presForumContainer{
+    height: 140vh;
+  }
+}

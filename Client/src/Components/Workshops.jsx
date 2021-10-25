@@ -4,7 +4,7 @@ import '../Assets/css/Workshops.css'
 export default function Workshops(){
     return(
         <>
-        <h1 className="staytuned"> Stay tuned... </h1>
+        <h1 className="staytuned">Restez à l'écoute... </h1>
     
        
         </>
