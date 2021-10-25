@@ -97,7 +97,7 @@ export default function BlogEditor() {
     dataform.append('image', image)
     dataform.append('writer', writer)
     dataform.append('text', txt)
-
+     
 
     setLoading(true)
     axios.post(

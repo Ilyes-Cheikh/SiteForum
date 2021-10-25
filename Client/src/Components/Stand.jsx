@@ -65,7 +65,7 @@ export default function Stand() {
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step2">
+            <div class="demo-card demo-card--step1">
                 <div class="head">
                     <div class="number-box">
                         <span>17h</span>

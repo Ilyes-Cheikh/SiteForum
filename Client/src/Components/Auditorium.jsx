@@ -64,7 +64,7 @@ export default function Auditorium () {
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step2">
+            <div class="demo-card demo-card--step1">
                 <div class="head">
                     <div class="number-box">
                         <span>17h</span>
@@ -73,7 +73,7 @@ export default function Auditorium () {
                 </div>
                 <div class="body">
                   
-                    <img src={cloture} alt="Graphic"/>
+                    <img src={cloture} alt="cloture"/>
                 </div>
             </div>
         

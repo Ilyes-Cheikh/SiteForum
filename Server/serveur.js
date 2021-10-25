@@ -10,7 +10,7 @@ const mongoose = require("mongoose")
 
 const port = process.env.PORT || 3001;
 
-const mongoURI = "mongodb+srv://first:first@cluster.6keue.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const mongoURI = "mongodb+srv://forum:DVKwQY0XdEDhszQg@cluster0.9qd99.mongodb.net/Forum2021?retryWrites=true&w=majority"
 
 app.use(express.json())
 

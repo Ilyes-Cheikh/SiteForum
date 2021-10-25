@@ -9,7 +9,7 @@ export default function Home() {
     useEffect(() => {
         let unmounted = false
         if (!unmounted) {
-            Axios.get('http://localhost:3001/blogs').then(
+            Axios.get('https://back.ensi-junior-entreprise.net/blogs').then(
                 (data) => {
                     setArticles(data.data)
                 }

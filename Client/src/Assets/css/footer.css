@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/footer.jpg);
+    background: linear-gradient(90deg, rgba(46,163,221,0.8) 0%, rgba(46,163,221,0.8) 100%), url('../images/footer3.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,9 +32,11 @@
     text-shadow: 0px 1px 3px  black;
 }
 .footer-col p{
-    color: white;
+    color: var(--beige);
     padding-left:10px;
     font-family: proxima-nova;
+    text-shadow: 0px 1px 2px  black;
+   
 }
 .socialmedia-logo{
     width: 28px;
