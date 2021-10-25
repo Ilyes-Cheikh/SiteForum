@@ -20,8 +20,9 @@ export default function Home() {
             <PresForum />
             <Funfact />
             <br/>
-            <Entreprises/>
             <Aftermovie/>
+            <Entreprises/>
+            <br/>
             <Footer />
         </div>
 
