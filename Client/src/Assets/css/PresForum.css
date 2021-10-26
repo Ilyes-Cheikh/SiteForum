@@ -13,219 +13,101 @@
 
 .presForumContainer{
   background: linear-gradient(to right, #1f212d 0%,#1f212d 20%, white 20%,white 80%,white 100%); 
-  height: 41vmax;
-  margin-top: 4%;
+  height: auto;
 
 }
 .line{
   border-bottom: 2px solid #1f212d;
   width: 42%;
-  margin-bottom: 6%;
+  padding-top:6px;
 }
 .event_text{
   font-size: 1.2rem;
-  position: absolute;
-  width: 60%;
-  padding:2%;
-  margin-left: 35%;
-  margin-top: 7%;
+  width: 65%;
   font-family: Proxima-nova;
-  
+  padding:30px;
+  display: inline-block;
+  padding-bottom: 50px;
+
 }
 
 .img_container{
-  width : 100%;
-  position: absolute;
+  width : 30%;
   padding-left: 4%;
-  margin-top: 1%;
-  
+  display: inline-block;
 }
 .imggg{
-  width: 30%;
+  width: 100%;
   height: auto;
   box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, 0.5);
-  margin-top: 5%;
 }
-
+.forumDescription{
+  width: 100%;
+  padding-top:10px;
+}
 .t_text{
-  font-size: 3vw;
-  width: 50%;
-  margin-left: 32%;
-  margin-top: -22%;
+  font-size: 2.5rem;
   color:  #2ea3dd;
   font-family: Gilroy-Bold;
-  position: absolute;
   text-shadow: 2px 1px 2px var(--blue-marine);
 
 }
 
 .edition_text{
-  color: var(--blue-marine);
-  margin-left: 7%;
-  font-size: 3.3vw;
+  color:  #2ea3dd;
+  margin-top: 4%;
+  margin-left: 8%;
+  font-size: 2.5rem;
   font-family: Photograph-Signature;
-  position: absolute;
-  margin-top: 28%;
+  text-align: center;
  
 }
 
-@media screen and ( max-width : 1200px ){
-  .presForumContainer{
-    height: 50vmax;
-  }  
-
-}
-
-@media screen and ( max-width : 1000px ){
-
-  .presForumContainer{
-    height: 155vmax;
-  }  
-  .event_text{
-   
-    width: 60%;
-    padding:0%;
-    margin-left: 30%;
-    margin-top: 84%;
-  }
-  .img_container{
-    width : 98%;
-    position: absolute;
-    margin-left: 0%;
-    margin-top: 3%;
-  }
-  .imggg{
-    width: 85%;
-    height: auto;
-
-    margin-top: 5%;
-  }
+@media  screen and (max-width :900px) {
   
-  .t_text{
-    font-size: 3rem;
-    width: 50%;
-    margin-left: 21%;
-    margin-top: 4%; 
-    text-shadow: 2px 1px 2px var(--blue-marine);
+  .img_container{
+    display: grid;
+    width: 90%;
+    padding-top: 35px;
+  }
+  .event_text{
+    margin-left:30%;
+    padding:0%;
+    padding-right: 30px;
+    padding-top:30px;
+    width:70%;
+    padding-bottom: 30px;
   }
   
   .edition_text{
-    margin-left: 4%;
-    font-size: 6vw;
-    margin-top: 80%;
+    position: absolute;
     width: 10%;
     text-align: center;
-    color: white;
+    color:var(--blue-ciel);
+    margin-left: 1%;
+    margin-top: 70%;
   }
-  
-
 }
 
-@media screen and ( max-width : 800px ){
-
+@media screen and (max-width : 500px){
   .presForumContainer{
-    height: 175vmax;
-  }  
-
-  .t_text{
-    font-size: 3rem;
-    width: 60%;
+    margin-top: 5%;
   }
-  
-}
-
-@media screen and ( max-width : 740px ){
-  .t_text{
-    font-size: 2.5rem;
-    width: 50%;
-  }
- .event_text{
-   margin-top: 90%;
- }
-}
-@media screen and ( max-width : 660px ){
-  .presForumContainer{
-    height: 190vmax;
-  }  
-  .t_text{
-    width: 60%;
-  }
-  
-}
-
-
-@media screen and ( max-width : 550px ){
   .t_text{
     font-size: 2rem;
-    width: 60%;
   }
- .event_text{
-   margin-top: 90%;
- }
-}
-
-@media screen and (max-width : 440px){
-   
-  .event_text{
-    margin-top: 92%;
-  }
-  
-  .t_text{
-    font-size: 1.8rem;
-    width:70%;
-  }
-
-  .presForumContainer{
-    height: 200vh;
-  }  
-
-}
-@media screen and ( max-width : 400px ){
-  .presForumContainer{
-    height: 170vh;
-  }  
-  .event_text{
-    font-size: 1rem;
-    margin-top: 92%;
-  }
-  
-  .t_text{
-    font-size: 1.5rem;
-    
-  }
-  
   .edition_text{
-    font-size: 7vw;
-    color: white;
-  }
- 
-
-  }
-
-  @media screen and ( max-width : 370px ){
-    .presForumContainer{
-      height: 175vh;
-    }  
-  }
-
-  @media screen and ( max-width : 290px ){
-    .presForumContainer{
-      height: 180vh;
-    }
-    .event_text{
-      margin-top: 110%;
-    }  
-  }
-
-@media screen and (max-height : 600px){
-  .presForumContainer{
-    height: 210vh;
+    font-size:2rem;
   }
 }
 
-
-@media screen and (min-height : 750px)and (max-width:800px){
-  .presForumContainer{
-    height: 140vh;
+@media screen and (max-width : 400px){
+  .t_text{
+    font-size: 1.7rem;
+  }
+  .edition_text{
+    font-size:1.5rem;
+    margin-top: 75%;
   }
 }
+
