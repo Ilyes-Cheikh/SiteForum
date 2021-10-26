@@ -325,3 +325,15 @@ a {
 .header-logo{
   height: 30%;
 }
+
+@media(max-height:500px){
+  .home-header-overlay{
+    height: auto;
+  }
+  .home-header-bg{
+    height: auto;
+  }
+  .home-header-content{
+    height: auto;
+  }
+}
