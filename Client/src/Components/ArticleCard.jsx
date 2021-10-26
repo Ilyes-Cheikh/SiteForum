@@ -24,21 +24,21 @@ export default function ArticleCard(props) {
                     <div dangerouslySetInnerHTML={{ __html: props.content.length > 100 ? props.content.substring(0, 350) + '...' : props.content }} className="articlesText"></div>
                 </div>
                 <div className="share">
-                    <FacebookShareButton url={`http://localhost:8000/articles`}>
+                    <FacebookShareButton url={`https://ensi-junior-entreprise.net/${props.id}`} >
                         <FacebookIcon logoFillColor="white" round={true} size={30} className="socialicon"></FacebookIcon>
                     </FacebookShareButton>
 
-                    <LinkedinShareButton url={`http://localhost:8000/articles/`}>
+                    <LinkedinShareButton url={`https://ensi-junior-entreprise.net/${props.id}`} >
                         <LinkedinIcon logoFillColor="white" round={true} size={30} className="socialicon"></LinkedinIcon>
                     </LinkedinShareButton>
 
-                    <TwitterShareButton url={`http://localhost:8000/article/`}>
+                    <TwitterShareButton url={`https://ensi-junior-entreprise.net/${props.id}`} >
                         <TwitterIcon logoFillColor="white" round={true} size={30} className="socialicon"></TwitterIcon>
                     </TwitterShareButton>
                 </div>
 
                 <div className="articlesButton" onClick={scrollToTop}>
-                    <Link to={`/articles/${props.id}`}>Read more </Link>
+                    <a  href={`https://ensi-junior-entreprise.net/${props.id}`}  target='_blank'>Read more </a>
 
                 </div>
 

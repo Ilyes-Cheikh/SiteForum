@@ -9,7 +9,7 @@ import swal from 'sweetalert2'
 import "../Assets/css/InscriptionFormulaire.css";
 
 function InscriptionFormulaire() {
-  const baseURL = "http://localhost:3001/inscription";
+  const baseURL = "https://backforum.ensi-junior-entreprise.net/inscription";
   const [isLoading, setLoading] = useState(true);
   const [ShowFail, setShowFail] = useState(false);
   const myRef = useRef(null)
@@ -82,7 +82,7 @@ function InscriptionFormulaire() {
         setResponseMessage(response.data)
         //console.log(ResponseMessage)
         {swal.fire({
-          text: "Vous êtes inscti avec succès au 16ème édition du forum annuel de l'ENSI Junior Entreprise",
+          text: "Vous êtes inscri avec succès au 16ème édition du forum annuel de l'ENSI Junior Entreprise",
           icon: 'success',
           confirmButtonColor: '#2ea3dd',
   
@@ -211,7 +211,7 @@ function InscriptionFormulaire() {
               </div>
 
                 <MDBInput
-                  label="CV"
+                  label="Déposez votre CV"
                   icon="file-alt"
                   group
                   type="file"
@@ -243,7 +243,7 @@ function InscriptionFormulaire() {
                   onChange={() => setPartage(!Partage)}
                 ></input>
                 <label class="custom-control-label" for="defaultUnchecked2">
-                  J'accepte que mes données serons partagés avec les entreprises
+                  J'accepte que mes données serons partagés avec les entreprises.
                 </label>
               </div>
 

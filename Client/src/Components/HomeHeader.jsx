@@ -49,11 +49,6 @@ export default function Header() {
                                     <a href="https://www.linkedin.com/company/ensi-junior-entreprise/"><i class="fab fa-linkedin"></i></a>
                                     <a href="https://www.youtube.com/user/ENSIJuniorEntreprise"><i class="fab fa-youtube"></i></a>
 
-                                    <a href='https://www.facebook.com/ENSI.Junior.Entreprise/' target='_blank'><i class="fab fa-facebook-f"></i></a>
-                                    <a href='https://www.instagram.com/ensijunior/' target='_blank'><i class="fab fa-instagram"></i></a>
-                                    <a  href='https://www.linkedin.com/company/ensi-junior-entreprise/' target='_blank' ><i class="fab fa-linkedin"></i></a>
-                                    <a href='https://www.youtube.com/user/ENSIJuniorEntreprise' target='_blank'><i class="fab fa-youtube"></i></a>
-
                                 </div>
                             </div>
                         </div>

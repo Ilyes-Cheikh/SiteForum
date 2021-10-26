@@ -19,7 +19,7 @@
       height: 9px;
       background-color:var(--blue-marine);
       border-radius: 9px;
-      box-shadow: 0px 0px 4px 2px var(--beige);
+      box-shadow: 0px 0px 3px 2px var(--blue-ciel);
    }
   }
   /* Some Cool Stuff */
@@ -64,8 +64,9 @@
     text-align: center;
     max-width: 90%;
     margin: auto;
+    font-size: 1.8rem;
     margin-bottom: 45px;
-    color: var(--beige);
+    color: var(--blue-ciel);
   }
   #timeline .demo-card-wrapper {
     position: relative;
@@ -165,7 +166,7 @@
     font-size: 23px;
     line-height: 35px;
     font-weight: 600;
-    font-family: Proxima;
+    font-family: Proxima Nova;
     background: rgba(0, 0, 0, 0.17);
     color: var(--blue-marine);
   }
@@ -175,7 +176,7 @@
     font-weight: inherit;
     letter-spacing: 0.5px;
     margin: 0;
-  
+    font-family: Proxima Nova;
     line-height: 1.3rem;
     color: var(--blue-marine);
   }
@@ -217,7 +218,7 @@
   #timeline .demo-card .body img {
     display: block;
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
   #timeline .demo-card--step1 {
     background-color: var(--beige);

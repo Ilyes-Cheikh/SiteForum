@@ -28,9 +28,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <style>
+      .loader {
+        position: absolute;
+        top: calc(50% - 10em);
+        left: calc(50% - 8em);
+        width: 17em;
+        height: 17em;
+        background: url("./logo.png") no-repeat center;
+        animation: load8 1.5s infinite linear;
+      }
+  
+      @keyframes load8 {
+        0% {
+          transform: rotate(0deg);
+        }
+  
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
     <title>Le Forum Annuel de l'ENSI</title>
   </head>
   <body>
+    <div class="loader">
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

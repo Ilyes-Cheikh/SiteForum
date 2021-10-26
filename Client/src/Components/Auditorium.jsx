@@ -1,6 +1,10 @@
 import react from 'react'
 import '../Assets/css/Auditorium.css' 
 import ouverture from '../Assets/images/motouvert.jpg'
+import pause from '../Assets/images/pause.jpg'
+import tableronde from '../Assets/images/tableronde.jpg'
+import cloture from '../Assets/images/forumimg2.jpg'
+import presentreprises from '../Assets/images/presentreprises.jpg'
 export default function Auditorium () {
     return(
         <div className="autitoriumpage">
@@ -8,7 +12,7 @@ export default function Auditorium () {
         <h1>Programme</h1>
         <p class="leader">Auditorium</p>
         <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
                         <span>08h30</span>
@@ -16,34 +20,47 @@ export default function Auditorium () {
                     <h2> Mot d'ouverture</h2>
                 </div>
                 <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src={ouverture} alt="Graphic"/>
+                  
+                    <img src={ouverture} alt="ouverture"/>
                 </div>
             </div>
     
             <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
-                        <span>10h</span>
+                    
                     </div>
                     <h2>Présentation des entreprises</h2>
                 </div>
                 <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic"/>
+                   
+                    <img src={presentreprises} alt="entreprises"/>
                 </div>
             </div>
     
-            <div class="demo-card demo-card--step1">
+            <div class="demo-card demo-card--step2">
                 <div class="head">
                     <div class="number-box">
-                        <span>13h</span>
+                        
                     </div>
-                    <h2> Table Ronde</h2>
+                    <h2> Pause déjeuner </h2>
                 </div>
                 <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic"/>
+                  
+                    <img src={pause} alt="pause"/>
+                </div>
+            </div>
+    
+            <div class="demo-card demo-card--step2">
+                <div class="head">
+                    <div class="number-box">
+                        <span></span>
+                    </div>
+                    <h2> Table ronde </h2>
+                </div>
+                <div class="body">
+                   
+                    <img src={tableronde} alt="tableronde"/>
                 </div>
             </div>
     
@@ -52,24 +69,11 @@ export default function Auditorium () {
                     <div class="number-box">
                         <span>17h</span>
                     </div>
-                    <h2> Mot de clôture </h2>
+                    <h2> Clôture</h2>
                 </div>
                 <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic"/>
-                </div>
-            </div>
-    
-            <div class="demo-card demo-card--step2">
-                <div class="head">
-                    <div class="number-box">
-                        <span>05</span>
-                    </div>
-                    <h2><span class="small">Subtitle</span> Conversion</h2>
-                </div>
-                <div class="body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-                    <img src="http://placehold.it/1000x500" alt="Graphic"/>
+                  
+                    <img src={cloture} alt="cloture"/>
                 </div>
             </div>
         

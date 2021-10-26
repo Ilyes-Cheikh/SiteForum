@@ -27,7 +27,7 @@ export default function Footer() {
                 <h3>Nous contacter</h3>
                 <div className="logo-info">
                     
-                    <p><i class="fas fa-phone-alt"></i> +44 113 328 1274 </p>
+                    <p><i class="fas fa-phone-alt"></i> +216 23 720 944</p>
                 </div>
                 <div className="logo-info">
                     

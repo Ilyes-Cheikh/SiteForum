@@ -9,10 +9,10 @@
   }
   .paper{
       width:75%;
-      margin-top: 2%;
+      margin-top: 1%;
   }
 .EJE_par{
-    height:60vh;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,9 +32,9 @@
 .EJE_par_description{
     font-family: proxima-nova;
     color:var(--blue-marine);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position:relative;
-    text-align: justify;
+       text-align: center;
     line-height: 1.4;
     overflow: hidden;
     width: 85%;
@@ -46,26 +46,26 @@
 .EJE_par_logo{
     margin-top: 5%;
     margin-left: 2%;
-    width: 20%;
+    width: 24%;
 }
 .EJE_par_description_left{
     margin-top: 3%;
-    width: 38%;
+    width: 36%;
     float: left;
     
 }
 .EJE_par_description_right{
     margin-top: 3%;
-    width: 38%;
+    width: 36%;
     float: right;
-    margin-bottom: 2%;
+  
    
 }
 .EJE_par_description_left:before
 .EJE_par_description_right::before{
     content: ""; 
     width: 50vw; 
-    height: 75vh;
+    
    
 }
 .EJE_par_description_left:before{
@@ -79,38 +79,39 @@
         width:85%;
     }
     .EJE_par_logo{
-        margin-top: 8%;
+        margin-top: 20%;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .paper{
         width:90%;
     }
-    .EJE_par{
-        height:70vh;
-    }
+
     .EJE_par_logo{
-        margin-top: 7%;
+        margin-top: 20%;
     }
     .EJE_par_title{
         font-size: 2rem;
         margin-top:5%;
     }
     .EJE_par_description{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        
     }
+ 
   }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 750px) {
     .paper{
         width:90%;
     }
     .EJE_par{
-        height:100vh;
+       
     }
     .EJE_par_logo{
-        margin-top: 17%;
+        margin-top: 35%;
         margin-left: 2%;
-        width: 20%;
+        width: 24%;
     }
     .EJE_par_title{
         text-align: center;
@@ -125,7 +126,7 @@
         color:var(--blue-marine);
         font-size: 1.2rem;
         position:relative;
-        text-align: justify;
+        text-align: center;
         line-height: 1.4;
         overflow: hidden;
         width: 85%;
@@ -137,11 +138,11 @@
       .paper{
           width: 90%;
           display: grid;
-          opacity: 0.8;
+          opacity: 1;
           margin-top: 6%;
       }
     .EJE_par{
-        height:60vh;
+       
         margin-top: 21%;
     }
     .EJE_par_logo{
@@ -151,7 +152,7 @@
         right: 15%;
         width: 70%;
         opacity: 0.5;
-        margin-top: 40%;
+        margin-top: 20%;
     }
     .EJE_par_title{
         font-size: 2rem;
@@ -162,7 +163,7 @@
         margin-left: 9%;   
     }
     .EJE_par_description{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .EJE_par_description_left{
         width: 100%;
@@ -178,7 +179,11 @@
           margin-top: 10%;
       }
       
-.EJE_par{
-    height:90vh;
+
+.EJE_par_description{
+    font-size: 1rem;
+}
+.EJE_par_logo{
+    margin-top: 60%;
 }
   }
