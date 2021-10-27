@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "logoSrc": "minotore.png",
+      "URL": "/"
+    },
+    {
+      "id": 2,
+      "logoSrc": "habemus.png",
+      "URL": "/"
+    },
+    {
+      "id": 3,
+      "logoSrc": "minotore.png",
+      "URL": "/"
+    },
+    {
+      "id": 5,
+      "logoSrc": "minotore.png",
+      "URL": "/"
+    },
+    {
+      "id": 6,
+      "logoSrc": "minotore.png",
+      "URL": "/"
+    }
+  ]
