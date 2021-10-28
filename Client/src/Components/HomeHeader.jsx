@@ -14,25 +14,26 @@ export default function Header() {
     const [finish, setFinish] = useState(false)
 
     useEffect(() => {
-            setInterval(() => {
-                const then = moment('2021-11-03 08:30:00', 'YYYY-MM-DD hh:mm:ss');
-                const now = moment();
-                const countdown = moment(then - now);
-                if (now >= then){
-                    setDays(0)
-                    setHours(0)
-                    setMinutes(0)
-                    setSeconds(0)
-                    setFinish(true)
-                }
-                else{
-                setDays(countdown.format('D')-1);
-                setHours(countdown.format('HH')-1);
-                setMinutes(countdown.format('mm'));
-                setSeconds(countdown.format('ss'));
-                }
-            }, 1000);
-    },[]);
+        setInterval(() => {
+            const then = moment('2021-11-03 08:30:00', 'YYYY-MM-DD hh:mm:ss');
+            const now = moment();
+            var diffTime = then.diff(now);
+            var duration = moment.duration(diffTime)
+            if (now >= then){
+                setDays(0)
+                setHours(0)
+                setMinutes(0)
+                setSeconds(0)
+                setFinish(true)
+            }
+            else{
+            setDays(duration.days());
+            setHours(duration.hours());
+            setMinutes(duration.minutes());
+            setSeconds(duration.seconds());
+            }
+        }, 1000);
+},[]);
 
     return (
         <div>
