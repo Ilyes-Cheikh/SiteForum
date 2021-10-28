@@ -9,6 +9,8 @@
     font-family: Gilroy;
     font-size: 3rem;
     text-align: center;
+    margin-top: -120px !important;
+  
 }
 .logo-img{
   width: 50%;
