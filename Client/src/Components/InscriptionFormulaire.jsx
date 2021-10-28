@@ -113,7 +113,7 @@ function InscriptionFormulaire() {
           <MDBCol md="12">
             <form onSubmit={handleSubmit}>
                
-              <Alert show={ShowFail} variant='danger'>L'adresse mail existe déja</Alert>
+              <Alert show={ShowFail} variant='danger'>Vous êtes déjà inscrit</Alert>
               <div className="grey-text">
                 <MDBInput
                   required
