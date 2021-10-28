@@ -7,6 +7,10 @@ import img3 from '../Assets/images/sponsors/minotore.png'
 import img4 from '../Assets/images/sponsors/value.png'
 import img5 from '../Assets/images/sponsors/Linedata_Logo.png'
 import img6 from '../Assets/images/hli.png'
+import img7 from '../Assets/images/telnet.png'
+import img8 from '../Assets/images/elyadata.png'
+import img9 from '../Assets/images/oddobhf.png'
+import img10 from '../Assets/images/iobeya.png'
 
 
 export default function Entreprises() {
@@ -15,12 +19,16 @@ export default function Entreprises() {
            
             <div className="partners">
                 <div className="box">
-                    <span style={{ "--i": 1 }}><img src={img1} /></span>
-                    <span style={{ "--i": 2 }}><img src={img2} /></span>
-                    <span style={{ "--i": 3  }}><img src={img3} /></span>
-                    <span style={{ "--i": 4 }}><img src={img4} /></span>
-                    <span style={{ "--i": 5 }}><img src={img5} /></span>
-                    <span style={{ "--i": 6 }}><img src={img6} /></span>
+                    <span style={{ "--i": 1 }}><img src={img1} alt=""/></span>
+                    <span style={{ "--i": 2 }}><img src={img2} alt=""/></span>
+                    <span style={{ "--i": 3  }}><img src={img3} alt=""/></span>
+                    <span style={{ "--i": 4 }}><img src={img4} alt=""/></span>
+                    <span style={{ "--i": 5 }}><img src={img5} alt=""/></span>
+                    <span style={{ "--i": 6 }}><img src={img6} alt=""/></span>
+                    <span style={{ "--i": 7 }}><img src={img7} alt=""/></span>
+                    <span style={{ "--i": 8 }}><img src={img8} alt=""/></span>
+                    <span style={{ "--i": 9 }}><img src={img9} alt=""/></span>
+                    <span style={{ "--i": 10 }}><img src={img10} alt=""/></span>
                     
                 </div>
             </div>
