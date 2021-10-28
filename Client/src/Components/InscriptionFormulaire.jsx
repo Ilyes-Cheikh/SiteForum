@@ -82,7 +82,7 @@ function InscriptionFormulaire() {
         setResponseMessage(response.data)
         //console.log(ResponseMessage)
         {swal.fire({
-          text: "Vous êtes inscrits avec succès à la 16ème édition du forum annuel de l'ENSI",
+          text: "Vous êtes inscrit avec succès à la 16ème édition du forum annuel de l'ENSI",
           icon: 'success',
           confirmButtonColor: '#2ea3dd',
   
