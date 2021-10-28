@@ -83,6 +83,7 @@ function InscriptionFormulaire() {
         setLoading(false)
         setResponseMessage(response.data)
         //console.log(ResponseMessage)
+
         // eslint-disable-next-line no-lone-blocks
         {
           swal.fire({
@@ -95,6 +96,7 @@ function InscriptionFormulaire() {
 
       }).catch(() => {
         setLoading(false)
+
         setShowFail(true)
         executeScroll()
         setTimeout(() => setShowFail(false), 2000)
@@ -209,7 +211,7 @@ function InscriptionFormulaire() {
                       label="Classe"
                       onChange={handleClasseChange}
                     >
-                      <MenuItem value={1}>1ere année</MenuItem>
+                      <MenuItem value={1}>1ère année</MenuItem>
                       <MenuItem value={2}>2ème année</MenuItem>
                       <MenuItem value={3}>3ème année</MenuItem>
                     </Select>
@@ -250,7 +252,7 @@ function InscriptionFormulaire() {
                   onChange={() => setPartage(!Partage)}
                 ></input>
                 <label class="custom-control-label" for="defaultUnchecked2">
-                  J'accepte que mes données serons partagés avec les entreprises.
+                  J'accepte que mes données seront partagées avec les entreprises.
                 </label>
               </div>
 
@@ -268,6 +270,7 @@ function InscriptionFormulaire() {
                     },
                   }}
                 >
+
                   {loading ? (
                     <ReactLoading
                       height={"20px"}
@@ -278,6 +281,7 @@ function InscriptionFormulaire() {
                   ) : (
                     "S'inscrire"
                   )}
+
                 </Button>
               </div>
             </form>
