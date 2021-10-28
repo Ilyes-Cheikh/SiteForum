@@ -82,7 +82,7 @@ function InscriptionFormulaire() {
         setResponseMessage(response.data)
         //console.log(ResponseMessage)
         {swal.fire({
-          text: "Vous êtes inscri avec succès au 16ème édition du forum annuel de l'ENSI Junior Entreprise",
+          text: "Vous êtes inscrits avec succès à la 16ème édition du forum annuel de l'ENSI",
           icon: 'success',
           confirmButtonColor: '#2ea3dd',
   
@@ -202,7 +202,7 @@ function InscriptionFormulaire() {
                       label="Classe"
                       onChange={handleClasseChange}
                     >
-                      <MenuItem value={1}>1ere année</MenuItem>
+                      <MenuItem value={1}>1ère année</MenuItem>
                       <MenuItem value={2}>2ème année</MenuItem>
                       <MenuItem value={3}>3ème année</MenuItem>
                     </Select>
@@ -243,7 +243,7 @@ function InscriptionFormulaire() {
                   onChange={() => setPartage(!Partage)}
                 ></input>
                 <label class="custom-control-label" for="defaultUnchecked2">
-                  J'accepte que mes données serons partagés avec les entreprises.
+                  J'accepte que mes données seront partagées avec les entreprises.
                 </label>
               </div>
 
@@ -259,7 +259,7 @@ function InscriptionFormulaire() {
                     },
                   }}
                 >
-                  Inscrire
+                  s'Inscrire
                 </Button>
               </div>
             </form>
