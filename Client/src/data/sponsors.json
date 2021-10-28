@@ -11,17 +11,28 @@
     },
     {
       "id": 3,
-      "logoSrc": "minotore.png",
+      "logoSrc": "value.png",
       "URL": "/"
     },
     {
       "id": 5,
-      "logoSrc": "minotore.png",
+      "logoSrc": "Linedata_Logo.png",
       "URL": "/"
     },
     {
       "id": 6,
-      "logoSrc": "minotore.png",
+      "logoSrc": "iobeya.jpg",
       "URL": "/"
     }
-  ]
+    ,
+    {
+      "id": 7,
+      "logoSrc": "new access.jpg",
+      "URL": "/"
+    },
+    {
+      "id": 8,
+      "logoSrc": "AxeFinance.png",
+      "URL": "/"
+    }
+    ]
