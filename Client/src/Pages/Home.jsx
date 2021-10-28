@@ -22,9 +22,8 @@ export default function Home() {
             <Funfact />
             <br/>
             <Aftermovie/>
-            {/* <Entreprises/> */}
-            <Sponsors />
-            {/* <br/> */}
+           <Entreprises/> 
+            {/* <Sponsors /> */}
             <Footer />
         </div>
 
