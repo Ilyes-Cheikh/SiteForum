@@ -1,16 +1,16 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBInput } from "mdbreact";
-import {Button,FormControl,InputLabel,Select,MenuItem} from '@mui/material';
+import { Button, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import { Alert } from 'react-bootstrap';
 import axios from "axios";
 import logo16 from '../Assets/images/logo16.png'
 import swal from 'sweetalert2'
-
+import ReactLoading from "react-loading";
 import "../Assets/css/InscriptionFormulaire.css";
 
 function InscriptionFormulaire() {
   const baseURL = "https://backforum.ensi-junior-entreprise.net/inscription";
-  const [isLoading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [ShowFail, setShowFail] = useState(false);
   const myRef = useRef(null)
   const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -63,15 +63,16 @@ function InscriptionFormulaire() {
 
     const data = new FormData();
     data.append('CV', CV[0]);
-    data.append('Nom',Nom)
-    data.append('Prenom',Prenom)
-    data.append('Email',Email)
-    data.append('Birthday',Birthday)
-    data.append('Status',Status)
-    data.append('Universite',Universite)
-    data.append('Classe',Classe)
-    data.append('Vaccine',Vaccine)
-    data.append('Partage',Partage)
+    data.append('Nom', Nom)
+    data.append('Prenom', Prenom)
+    data.append('Email', Email)
+    data.append('Birthday', Birthday)
+    data.append('Status', Status)
+    data.append('Universite', Universite)
+    data.append('Classe', Classe)
+    data.append('Vaccine', Vaccine)
+    data.append('Partage', Partage)
+    setLoading(true)
     axios
       .post(baseURL, data, {
         headers: {
@@ -79,31 +80,37 @@ function InscriptionFormulaire() {
         },
       })
       .then((response) => {
+        setLoading(false)
         setResponseMessage(response.data)
         //console.log(ResponseMessage)
-        {swal.fire({
-          text: "Vous êtes inscri avec succès au 16ème édition du forum annuel de l'ENSI Junior Entreprise",
-          icon: 'success',
-          confirmButtonColor: '#2ea3dd',
-  
-      })}
-        
-      }).catch(()=>{
+        // eslint-disable-next-line no-lone-blocks
+        {
+          swal.fire({
+            text: "Vous êtes inscrit avec succès au 16ème édition du forum annuel de l'ENSI",
+            icon: 'success',
+            confirmButtonColor: '#2ea3dd',
+
+          })
+        }
+
+      }).catch(() => {
+        setLoading(false)
         setShowFail(true)
         executeScroll()
-        setTimeout(()=>setShowFail(false),2000)
-        
+        setTimeout(() => setShowFail(false), 2000)
+
       });
-      
+
   };
 
   return (
     <div ref={myRef} className="Inscr_form">
+      <h3 className="text-center inscri-title" >Inscrivez vous</h3> 
       <MDBContainer >
         <MDBRow >
-          <MDBCol md="6">
+          <MDBCol md="12">
             <form onSubmit={handleSubmit}>
-              <p className="h5 text-center mb-4" className='inscri-title'>Inscription</p>
+               
               <Alert show={ShowFail} variant='danger'>L'adresse mail existe déja</Alert>
               <div className="grey-text">
                 <MDBInput
@@ -115,7 +122,7 @@ function InscriptionFormulaire() {
                   validate
                   error="wrong"
                   success="right"
-                  value ={Nom}
+                  value={Nom}
                   onChange={handleNomChange}
 
                 />
@@ -129,7 +136,7 @@ function InscriptionFormulaire() {
                   error="wrong"
                   success="right"
                   iconRegular
-                  value ={Prenom}
+                  value={Prenom}
                   onChange={handlePrenomChange}
                 />
                 <MDBInput
@@ -141,7 +148,7 @@ function InscriptionFormulaire() {
                   validate
                   error="wrong"
                   success="right"
-                  value ={Email}
+                  value={Email}
                   onChange={handleEmailChange}
                 />
                 <MDBInput
@@ -154,7 +161,7 @@ function InscriptionFormulaire() {
                   error="wrong"
                   success="right"
                   hint="Placeholder"
-                  value ={Birthday}
+                  value={Birthday}
                   onChange={handleBirthdayChange}
                   onBlur={handleBirthdayChange}
                 />
@@ -184,7 +191,7 @@ function InscriptionFormulaire() {
                     validate
                     error="wrong"
                     success="right"
-                    value ={Universite}
+                    value={Universite}
                     onChange={handleUniversiteChange}
                   />
                 ) : null}
@@ -210,17 +217,17 @@ function InscriptionFormulaire() {
                 ) : null}
               </div>
 
-                <MDBInput
-                  label="Déposez votre CV"
-                  icon="file-alt"
-                  group
-                  type="file"
-                  validate
-                  error="wrong"
-                  success="right"
-                  hint="Placeholder"
-                  onChange={handleCVChange}
-                />
+              <MDBInput
+                label="Déposez votre CV"
+                icon="file-alt"
+                group
+                type="file"
+                validate
+                error="wrong"
+                success="right"
+                hint="Placeholder"
+                onChange={handleCVChange}
+              />
 
               <div class="custom-control custom-checkbox">
                 <input
@@ -247,10 +254,12 @@ function InscriptionFormulaire() {
                 </label>
               </div>
 
-              <div className="text-center">
+              <div className="text-center buttonIns">
                 <Button
+                
+
                   type="submit"
-                  disabled = {!(!Vaccine || true)}
+                  disabled={!(!Vaccine || true || loading)}
                   variant="contained"
                   sx={{
                     backgroundColor: "#2ea3dd",
@@ -259,12 +268,21 @@ function InscriptionFormulaire() {
                     },
                   }}
                 >
-                  Inscrire
+                  {loading ? (
+                    <ReactLoading
+                      height={"20px"}
+                      width={"24px"}
+                      className="loading1"
+                      type="spin"
+                    />
+                  ) : (
+                    "S'inscrire"
+                  )}
                 </Button>
               </div>
             </form>
           </MDBCol>
-          <img src={logo16} className="logo-img"></img>
+          {/* <img src={logo16} className="logo-img" alt=""></img> */}
         </MDBRow>
       </MDBContainer>
     </div>
