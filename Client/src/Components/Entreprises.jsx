@@ -9,7 +9,7 @@ import img5 from '../Assets/images/sponsors/Linedata_Logo.png'
 import img6 from '../Assets/images/hli.png'
 import img7 from '../Assets/images/telnet.png'
 import img8 from '../Assets/images/elyadata.png'
-import img9 from '../Assets/images/oddobhf.png'
+import img9 from '../Assets/images/oddobh.png'
 import img10 from '../Assets/images/iobeya.png'
 
 
